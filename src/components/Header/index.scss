@@ -1,0 +1,148 @@
+.header {
+	background-color: #fafafa;
+	padding: 10px 0 0;
+}
+
+.word-list-select {
+	padding: 10px;
+
+	button {
+		border: 0;
+		-webkit-appearance: none;
+		height: 32px;
+		border: 1px solid rgba(#999, 0.2);
+		padding: 0 10px;
+		margin-right: 10px;
+
+		transition: all 0.3s;
+		cursor: pointer;
+
+		&:hover {
+			background-color: #ecf2fa;
+			border-color: #ceddf0;
+		}
+
+		&:focus {
+			outline: 0;
+			border: 1px solid #5793ee;
+		}
+
+		i {
+			font-size: 12px;
+			margin-left: 10px;
+			color: #234d2c;
+		}
+	}
+}
+
+.filter-picker {
+	position: relative;
+	height: 32px;
+	width: 110px;
+	margin: 5px 10px;
+
+	select {
+		border: 0;
+		-webkit-appearance: none;
+		height: 100%;
+		width: 100%;
+		border: 1px solid rgba(#999, 0.2);
+		padding: 0 10px;
+
+		transition: all 0.3s;
+		cursor: pointer;
+
+		&:hover {
+			background-color: #ecf2fa;
+			border-color: #ceddf0;
+		}
+
+		&:focus {
+			outline: 0;
+			border: 1px solid #5793ee;
+		}
+	}
+
+	.icon {
+		position: absolute;
+		top: 50%;
+		right: 10px;
+		transform: translateY(-50%);
+		font-size: 12px;
+		pointer-events: none;
+	}
+}
+
+.filter-list {
+	margin-top: 15px;
+	border-top: 1px solid #ddd;
+}
+
+.filter {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px 10px;
+
+	&:nth-child(2n+1) {
+		background-color: rgba(#222, 0.04);
+	}
+
+	&__label {
+		min-width: 160px;
+		display: inline-flex;
+		align-items: center;
+	}
+
+	&__content {
+	}
+
+	input {
+		padding: 0 10px;
+		height: 32px;
+		border: 1px solid rgba(#999, 0.2);
+		-webkit-appearance: none;
+		background-color: #fff;
+		border-radius: 0px;
+		font-family: 'Courier New', Courier, monospace;
+
+		&:hover {
+			background-color: #ecf2fa;
+			border-color: #ceddf0;
+		}
+
+		&:focus {
+			border: 1px solid #5793ee;
+		}
+	}
+
+	button {
+		margin-left: 10px;
+		width: 32px;
+		height: 32px;
+		border: 0;
+		-webkit-appearance: none;
+		background-color: #ee6644;
+		border: 1px solid #ee6644;
+		color: #fff;
+		border-radius: 0;
+		cursor: pointer;
+
+		&:hover {
+			background-color: #ce4725;
+			border-color: #aa371b;
+		}
+
+		&:focus {
+			border: 1px solid #aa3112;
+		}
+	}
+
+	input, button {
+
+		transition: all 0.3s;
+
+		&:focus {
+			outline: 0;
+		}
+	}
+}
