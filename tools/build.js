@@ -5,6 +5,6 @@ const checkoutBranch = require('./checkoutBranch');
 await execute(`npm run build`);
 
 // Switch branch
-await checkoutBranch(`pages`, 'master');
+await checkoutBranch(`gh-pages`, 'master');
 
 // Move from dist to root
