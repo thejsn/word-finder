@@ -69,12 +69,8 @@ module.exports = async (branchName, fromBranch=null) => {
         }
     } catch (e) {
         console.log(e);
+        return false
     }
 
-    if(hasRemoteBranch) {
-        // Maybe not?
-        try {
-            // await execute(`git pull`);
-        } catch (e) {}
-    }
+    return true;
 }
